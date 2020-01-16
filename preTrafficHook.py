@@ -27,7 +27,7 @@ def lambda_handler(event, context):
     else:
         status = "Failed"
 
-    response = codeclient.put_lifecycle_event_hook_execution_status(
+    _ = codeclient.put_lifecycle_event_hook_execution_status(
         deploymentId=deploymentId,
         lifecycleEventHookExecutionId=lifecycleEventHookExecutionId,
         status=status,

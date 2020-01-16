@@ -12,5 +12,5 @@ def lambda_handler(event, context):
     # print("Status result ",context)
     return {
         "statusCode": 200,
-        "body": json.dumps({"List": buckets, "event": event, "status": 300,}),
+        "body": json.dumps({"List": buckets, "event": event, "status": 300}),
     }
