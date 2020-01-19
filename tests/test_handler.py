@@ -64,7 +64,7 @@ def apigw_event():
     }
 
 
-def test_lambda_handler(apigw_event, mocker):
+def test_lambda_handler(apigw_event, self):
 
     ret = app.lambda_handler(apigw_event, "")
     data = json.loads(ret["body"])
