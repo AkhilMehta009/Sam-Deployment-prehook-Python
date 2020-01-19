@@ -9,6 +9,6 @@ before_install:
   - pip install boto3
 install:
   - pip install ".[test]" . # install package + test dependencies
-script: pytest tests/
+script: python tests/test_handler.py
 after_success:
   - codecov # submit coverage
