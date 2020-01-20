@@ -1,5 +1,7 @@
 import json
 import pytest
+
+print("hello")
 import app
 
 
