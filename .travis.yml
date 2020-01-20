@@ -7,8 +7,9 @@ before_install:
   - pip install -U pytest
   - pip install codecov
   - pip install boto3
+  - pip install flake8
 install:
   - pip install ".[test]" . # install package + test dependencies
-script: python tests/test_handler.py
+script: python tests/test_handler.py && flake8
 after_success:
   - codecov # submit coverage
