@@ -1,8 +1,5 @@
 import json
 import pytest
-
-print("hello")
-print("Akhil")
 import app
 
 
